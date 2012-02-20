@@ -13,7 +13,16 @@
 			github.token    github网站token(登录账户后查看Account Settings)
 			user.name		提交的用户名
 			user.email		提交时候用的邮箱地址，其实是注册的账户的邮箱地址，可以设置
-
+2.删除不需要的文件夹或文件
+	假如你不小心把 bin 目录，或者 classes 目录，更新到了版本库，想删除之，可以这么做：
+		git rm -fr bin
+		git commit
+		git push
+		添加 bin 到 .gitignore 文件下（.gitignore应该在当前项目根目录下）
+		.gitignore 内容例如：
+			/bin
+			/.classpath
+			/.gitignore
 
 			
 			
