@@ -13,4 +13,8 @@
 			github.token    github网站token(登录账户后查看Account Settings)
 			user.name		提交的用户名
 			user.email		提交时候用的邮箱地址，其实是注册的账户的邮箱地址，可以设置
+
+
+			
+			
 			
