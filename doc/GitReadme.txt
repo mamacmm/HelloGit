@@ -13,7 +13,30 @@
 			github.token    github网站token(登录账户后查看Account Settings)
 			user.name		提交的用户名
 			user.email		提交时候用的邮箱地址，其实是注册的账户的邮箱地址，可以设置
-2.删除不需要的文件夹或文件
+
+2.初始化git项目
+	按照官网所说，先在github网站上创建 Repositories资源库，例如：HelloGit
+	然后会看到项目初始化步骤：
+		Global setup:
+ 			Set up git
+  				git config --global user.name "Your Name"
+  				git config --global user.email your email
+			Add your public key
+      	Next steps:
+  			mkdir HelloGit
+  			cd HelloGit
+  			git init
+  			touch README
+  			git add README
+  			git commit -m 'first commit'
+  			git remote add origin git@github.com:youraddress/HelloGit.git
+  			git push -u origin master
+      	Existing Git Repo?
+  			cd existing_git_repo
+  			git remote add origin git@github.com:youraddress/HelloGit.git
+  			git push -u origin master
+
+3.删除不需要的文件夹或文件
 	假如你不小心把 bin 目录，或者 classes 目录，更新到了版本库，想删除之，可以这么做：
 		git rm -fr bin
 		git commit
